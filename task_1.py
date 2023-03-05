@@ -1,24 +1,68 @@
 """
-1. Каждое из слов «разработка», «сокет», «декоратор» представить
-в строковом формате и проверить тип и содержание соответствующих переменных.
-Затем с помощью онлайн-конвертера преобразовать строковые представление в формат
-Unicode и также проверить тип и содержимое переменных.
+1. Задание на закрепление знаний по модулю CSV. Написать скрипт, осуществляющий выборку
+определенных данных из файлов info_1.txt, info_2.txt, info_3.txt и формирующий новый
+«отчетный» файл в формате CSV. Для этого:
+a. Создать функцию get_data(), в которой в цикле осуществляется перебор файлов с
+данными, их открытие и считывание данных. В этой функции из считанных данных
+необходимо с помощью регулярных выражений извлечь значения параметров
+«Изготовитель системы», «Название ОС», «Код продукта», «Тип системы». Значения
+каждого параметра поместить в соответствующий список. Должно получиться четыре
+списка — например, os_prod_list, os_name_list, os_code_list, os_type_list. В этой же
+функции создать главный список для хранения данных отчета — например, main_data
+— и поместить в него названия столбцов отчета в виде списка: «Изготовитель
+системы», «Название ОС», «Код продукта», «Тип системы». Значения для этих
+столбцов также оформить в виде списка и поместить в файл main_data (также для
+каждого файла);
+b. Создать функцию write_to_csv(), в которую передавать ссылку на CSV-файл. В этой
+функции реализовать получение данных через вызов функции get_data(), а также
+сохранение подготовленных данных в соответствующий CSV-файл;
+c. Проверить работу программы через вызов функции write_to_csv().
 """
+import csv
+import re
 
-a1 = 'разработка'
-a2 = 'сокет'
-a3 = 'декоратор'
 
-str_list = [a1, a2, a3]
-for el in str_list:
-    print(f'{type(el)} {el}')
+def get_data():
+    os_prod_list = []
+    os_name_list = []
+    os_code_list = []
+    os_type_list = []
+    main_data = []
 
-print('========================')
+    for i in range(1, 4):
+        f = open(f'info_{i}.txt')
+        data = f.read()
 
-a1_unic = '\u0440\u0430\u0437\u0440\u0430\u0431\u043e\u0442\u043a\u0430'
-a2_unic = '\u0441\u043e\u043a\u0435\u0442'
-a3_unic = '\u0434\u0435\u043a\u043e\u0440\u0430\u0442\u043e\u0440'
+        reg = re.split(f'\n', data)
 
-unic_list = [a1_unic, a2_unic, a3_unic]
-for el in unic_list:
-    print(f'{type(el)} {el}')
+        for t in reg:
+            if 'Изготовитель системы:' in t:
+                os_prod_list.append(' '.join(t.split()[2:]))
+            elif "Название ОС:" in t:
+                os_name_list.append(' '.join(t.split()[2:]))
+            elif "Код продукта:" in t:
+                os_code_list.append(' '.join(t.split()[2:]))
+            elif "Тип системы:" in t:
+                os_type_list.append(' '.join(t.split()[2:]))
+
+    headers = ['Изготовитель системы', 'Название ОС', 'Код продукта', 'Тип системы']
+    main_data.append(headers)
+
+    for i in range(0, len(os_prod_list)):
+        row_data = list()
+        row_data.append(os_prod_list[i])
+        row_data.append(os_name_list[i])
+        row_data.append(os_code_list[i])
+        row_data.append(f'{os_type_list[i]}, str')
+        main_data.append(row_data)
+    return main_data
+
+
+def write_to_csv(out_file):
+    data = get_data()
+    with open(out_file, 'w') as f_n:
+        writer = csv.writer(f_n, quoting=csv.QUOTE_NONNUMERIC)
+        writer.writerows(data)
+
+
+write_to_csv('data_report.csv')

@@ -1,13 +1,28 @@
 """
-2. Каждое из слов «class», «function», «method» записать в байтовом типе без преобразования в последовательность кодов
-(не используя методы encode и decode) и определить тип, содержимое и длину соответствующих переменных.
+2. Задание на закрепление знаний по модулю json. Есть файл orders в формате JSON с
+информацией о заказах. Написать скрипт, автоматизирующий его заполнение данными. Для
+этого:
+a. Создать функцию write_order_to_json(), в которую передается 5 параметров — товар
+(item), количество (quantity), цена (price), покупатель (buyer), дата (date). Функция
+должна предусматривать запись данных в виде словаря в файл orders.json. При
+записи данных указать величину отступа в 4 пробельных символа;
+b. Проверить работу программы через вызов функции write_order_to_json() с передачей
+в нее значений каждого параметра.
 """
+import json
 
-a1 = b'class'
-a2 = b'function'
-a3 = b'method'
 
-str_list = [a1, a2, a3]
+def write_order_to_json(item, quantity, price, buyer, date):
+    with open('orders.json', 'r') as f_out:
+        data = json.load(f_out)
 
-for el in str_list:
-    print(f'type={type(el)}; word={el} len={len(el)}')
+    with open('orders.json', 'w') as f_in:
+        orders_list = data['orders']
+        order_info = {'item': item, 'quantity': quantity,
+                      'price': price, 'buyer': buyer, 'date': date}
+        orders_list.append(order_info)
+        json.dump(data, f_in, indent=4)
+
+
+write_order_to_json('printer', 5, 1800, 'Tramp', '01.01.2023')
+write_order_to_json('computer', 10, 18000, 'Sarkozi', '01.02.2023')

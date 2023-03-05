@@ -1,0 +1,18 @@
+{
+    "orders": [
+        {
+            "item": "printer",
+            "quantity": 5,
+            "price": 1800,
+            "buyer": "Tramp",
+            "date": "01.01.2023"
+        },
+        {
+            "item": "computer",
+            "quantity": 10,
+            "price": 18000,
+            "buyer": "Sarkozi",
+            "date": "01.02.2023"
+        }
+    ]
+}
