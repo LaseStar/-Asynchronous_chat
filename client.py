@@ -12,6 +12,11 @@ from socket import *
 import time
 import json
 import sys
+import logging
+import log.client_log_config
+
+# Параметры логирования
+CLIENT_LOGGER = logging.getLogger('client')
 
 
 def create_presence():
@@ -59,21 +64,25 @@ def main():
         server_address = 'localhost'
         server_port = 7777
     except ValueError:
-        print('В качестве порта может быть указано только число в диапазоне от 1024 до 65535.')
+        CLIENT_LOGGER.critical(f'Попытка запуска клиента с указанием неподходящего порта {server_port}.')
         sys.exit(1)
 
     s = socket(AF_INET, SOCK_STREAM)
     s.connect((server_address, server_port))
+    CLIENT_LOGGER.info(f'Запущен клиент, порт для подключений: {server_port}, '
+                       f'адрес сервера: {server_address}. ')
 
     msg = create_presence()
+    CLIENT_LOGGER.info(f'Cформировано сообщение серверу {msg}')
     send_message(msg, s)
+    CLIENT_LOGGER.debug(f'Сообщение отправлено на сервер {s}')
 
     try:
         msg_from_server = get_message(s)
         answer = parse_message(msg_from_server)
-        print(answer)
+        CLIENT_LOGGER.info(f'Принят ответ от сервера {answer}')
     except (ValueError, json.JSONDecodeError):
-        print('Не удалось декодировать сообщение сервера.')
+        CLIENT_LOGGER.error(f'Не удалось декодировать сообщение сервера.')
 
 
 if __name__ == '__main__':

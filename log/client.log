@@ -1,0 +1,5 @@
+
+2023-03-14 16:39:03,260 INFO client.py Запущен клиент, порт для подключений: 7777, адрес сервера: localhost. 
+2023-03-14 16:39:03,261 INFO client.py Cформировано сообщение серверу {'action': 'authenticate', 'time': 1678801143.2611995, 'user': {'account_name': 'User1', 'password': 'Password123'}}
+2023-03-14 16:39:03,261 DEBUG client.py Сообщение отправлено на сервер <socket.socket fd=436, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56624), raddr=('127.0.0.1', 7777)>
+2023-03-14 16:39:03,262 INFO client.py Принят ответ от сервера 200 : OK

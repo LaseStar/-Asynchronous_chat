@@ -7,9 +7,14 @@
     ○ -a <addr> — IP-адрес для прослушивания (по умолчанию слушает все
     доступные адреса).
 """
+import logging
+import log.server_log_config
 from socket import *
 import json
 import sys
+
+# Параметры логирования
+SERVER_LOGGER = logging.getLogger('server')
 
 
 def get_message(client):
@@ -24,6 +29,7 @@ def get_message(client):
 
 
 def client_response_check(msg_crch):
+    SERVER_LOGGER.debug(f'Разбор сообщения от клиента : {msg_crch}')
     if 'action' not in msg_crch \
             or 'time' not in msg_crch \
             or 'user' not in msg_crch \
@@ -68,11 +74,10 @@ def main():
         if listen_port < 1024 or listen_port > 65535:
             raise ValueError
     except IndexError:
-        print('После параметра -\'p\' необходимо указать номер порта.')
+        SERVER_LOGGER.critical(f'Попытка запуска сервера без указания порта.')
         sys.exit(1)
     except ValueError:
-        print(
-            'В качастве порта может быть указано только число в диапазоне от 1024 до 65535.')
+        SERVER_LOGGER.critical(f'Попытка запуска сервера с указанием неподходящего порта {listen_port}.')
         sys.exit(1)
 
     try:
@@ -82,21 +87,30 @@ def main():
             listen_address = ''
 
     except IndexError:
-        print(
-            'После параметра \'a\'- необходимо указать адрес, который будет слушать сервер.')
+        SERVER_LOGGER.critical(f'Попытка запуска сервера без указания адреса, который будет слушать сервер.')
         sys.exit(1)
 
     s = socket(AF_INET, SOCK_STREAM)
     s.bind((listen_address, listen_port))
+    SERVER_LOGGER.info(f'Запущен сервер, порт для подключений: {listen_port}, '
+                       f'адрес с которого принимаются подключения: {listen_address}. ')
     s.listen(5)
 
     while True:
         client, addr = s.accept()
-        msg_from_client = get_message(client)
-        print(msg_from_client)
-        response = client_response_check(msg_from_client)
-        create_client_presence(response, client)
-        client.close()
+        SERVER_LOGGER.info(f'Установлено соедение с ПК {addr}')
+        try:
+            msg_from_client = get_message(client)
+            SERVER_LOGGER.debug(f'Получено сообщение {msg_from_client}')
+            response = client_response_check(msg_from_client)
+            SERVER_LOGGER.info(f'Cформирован ответ клиенту {response}')
+            create_client_presence(response, client)
+            SERVER_LOGGER.debug(f'Соединение с клиентом {addr} закрыто.')
+            client.close()
+        except json.JSONDecodeError:
+            SERVER_LOGGER.error(f'Не удалось декодировать JSON строку, полученную от '
+                                f'клиента {addr}. Соединение закрывается.')
+            client.close()
 
 
 if __name__ == '__main__':
