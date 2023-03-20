@@ -3,3 +3,11 @@
 2023-03-14 16:39:03,261 INFO client.py Cформировано сообщение серверу {'action': 'authenticate', 'time': 1678801143.2611995, 'user': {'account_name': 'User1', 'password': 'Password123'}}
 2023-03-14 16:39:03,261 DEBUG client.py Сообщение отправлено на сервер <socket.socket fd=436, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56624), raddr=('127.0.0.1', 7777)>
 2023-03-14 16:39:03,262 INFO client.py Принят ответ от сервера 200 : OK
+2023-03-20 16:31:49,862 INFO client.py Запущен клиент, порт для подключений: 7777, адрес сервера: localhost. 
+2023-03-20 16:31:49,863 DEBUG decorators.py Функция create_presence с параметрами (), {}. Вызвана из модуля __main__.
+2023-03-20 16:31:49,863 INFO client.py Cформировано сообщение серверу {'action': 'authenticate', 'time': 1679319109.8637881, 'user': {'account_name': 'User1', 'password': 'Password123'}}
+2023-03-20 16:31:49,863 DEBUG decorators.py Функция send_message с параметрами ({'action': 'authenticate', 'time': 1679319109.8637881, 'user': {'account_name': 'User1', 'password': 'Password123'}}, <socket.socket fd=188, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 29920), raddr=('127.0.0.1', 7777)>), {}. Вызвана из модуля __main__.
+2023-03-20 16:31:49,863 DEBUG client.py Сообщение отправлено на сервер <socket.socket fd=188, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 29920), raddr=('127.0.0.1', 7777)>
+2023-03-20 16:31:49,865 DEBUG decorators.py Функция get_message с параметрами (<socket.socket fd=188, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 29920), raddr=('127.0.0.1', 7777)>,), {}. Вызвана из модуля __main__.
+2023-03-20 16:31:49,865 DEBUG decorators.py Функция parse_message с параметрами ({'response': 200, 'alert': 'OK'},), {}. Вызвана из модуля __main__.
+2023-03-20 16:31:49,865 INFO client.py Принят ответ от сервера 200 : OK

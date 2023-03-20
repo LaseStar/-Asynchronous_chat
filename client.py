@@ -14,11 +14,13 @@ import json
 import sys
 import logging
 import log.client_log_config
+from decorators import log
 
 # Параметры логирования
 CLIENT_LOGGER = logging.getLogger('client')
 
 
+@log
 def create_presence():
     m = {
         "action": "authenticate",
@@ -31,12 +33,14 @@ def create_presence():
     return m
 
 
+@log
 def send_message(msg_sm, socket_sm):
     js_msg = json.dumps(msg_sm)
     encod_js_ms = js_msg.encode('utf-8')
     socket_sm.send(encod_js_ms)
 
 
+@log
 def get_message(socket_gm):
     server_gm = socket_gm.recv(1000)
     if isinstance(server_gm, bytes):
@@ -48,6 +52,7 @@ def get_message(socket_gm):
     raise ValueError
 
 
+@log
 def parse_message(msg_pm):
     if 'response' in msg_pm:
         return f'{msg_pm["response"]} : {msg_pm["alert"]}'

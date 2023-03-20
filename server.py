@@ -12,11 +12,13 @@ import log.server_log_config
 from socket import *
 import json
 import sys
+from decorators import log
 
 # Параметры логирования
 SERVER_LOGGER = logging.getLogger('server')
 
 
+@log
 def get_message(client):
     client_gm = client.recv(1000)
     if isinstance(client_gm, bytes):
@@ -28,6 +30,7 @@ def get_message(client):
     raise ValueError
 
 
+@log
 def client_response_check(msg_crch):
     SERVER_LOGGER.debug(f'Разбор сообщения от клиента : {msg_crch}')
     if 'action' not in msg_crch \
@@ -59,6 +62,7 @@ def client_response_check(msg_crch):
     }
 
 
+@log
 def create_client_presence(msg_ccp, client_ccp):
     js_msg = json.dumps(msg_ccp)
     encod_js_msg = js_msg.encode('utf-8')
