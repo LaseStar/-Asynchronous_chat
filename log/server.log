@@ -1,9 +1,63 @@
-2023-03-20 16:31:41,493 INFO server.py Запущен сервер, порт для подключений: 7777, адрес с которого принимаются подключения: . 
-2023-03-20 16:31:49,862 INFO server.py Установлено соедение с ПК ('127.0.0.1', 29920)
-2023-03-20 16:31:49,864 DEBUG decorators.py Функция get_message с параметрами (<socket.socket fd=468, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 29920)>,), {}. Вызвана из модуля __main__.
-2023-03-20 16:31:49,864 DEBUG server.py Получено сообщение {'action': 'authenticate', 'time': 1679319109.8637881, 'user': {'account_name': 'User1', 'password': 'Password123'}}
-2023-03-20 16:31:49,864 DEBUG server.py Разбор сообщения от клиента : {'action': 'authenticate', 'time': 1679319109.8637881, 'user': {'account_name': 'User1', 'password': 'Password123'}}
-2023-03-20 16:31:49,864 DEBUG decorators.py Функция client_response_check с параметрами ({'action': 'authenticate', 'time': 1679319109.8637881, 'user': {'account_name': 'User1', 'password': 'Password123'}},), {}. Вызвана из модуля __main__.
-2023-03-20 16:31:49,865 INFO server.py Cформирован ответ клиенту {'response': 200, 'alert': 'OK'}
-2023-03-20 16:31:49,865 DEBUG decorators.py Функция create_client_presence с параметрами ({'response': 200, 'alert': 'OK'}, <socket.socket fd=468, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 29920)>), {}. Вызвана из модуля __main__.
-2023-03-20 16:31:49,865 DEBUG server.py Соединение с клиентом ('127.0.0.1', 29920) закрыто.
+2023-03-23 16:33:12,241 INFO server.py Запущен сервер, порт для подключений: 7777, адрес с которого принимаются подключения: . 
+2023-03-23 16:34:56,797 INFO server.py Установлено соедение с ПК ('127.0.0.1', 31209)
+2023-03-23 16:36:46,024 INFO server.py Запущен сервер, порт для подключений: 7777, адрес с которого принимаются подключения: . 
+2023-03-23 16:36:58,718 INFO server.py Установлено соедение с ПК ('127.0.0.1', 31220)
+2023-03-23 16:36:59,732 DEBUG decorators.py Функция get_message с параметрами (<socket.socket fd=376, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 31220)>,), {}. Вызвана из модуля __main__.
+2023-03-23 16:36:59,733 DEBUG server.py Получено сообщение {'action': 'authenticate', 'time': 1679578618.719578, 'user': {'account_name': 'User1', 'password': 'Password123'}}
+2023-03-23 16:36:59,733 DEBUG server.py Разбор сообщения от клиента : {'action': 'authenticate', 'time': 1679578618.719578, 'user': {'account_name': 'User1', 'password': 'Password123'}}
+2023-03-23 16:36:59,733 DEBUG decorators.py Функция client_response_check с параметрами ({'action': 'authenticate', 'time': 1679578618.719578, 'user': {'account_name': 'User1', 'password': 'Password123'}}, []), {}. Вызвана из модуля __main__.
+2023-03-23 16:59:33,290 INFO server.py Запущен сервер, порт для подключений: 7777, адрес с которого принимаются подключения: . 
+2023-03-23 16:59:39,312 INFO server.py Установлено соедение с ПК ('127.0.0.1', 31407)
+2023-03-23 17:00:37,268 INFO server.py Установлено соедение с ПК ('127.0.0.1', 31412)
+2023-03-23 17:01:56,772 INFO server.py Запущен сервер, порт для подключений: 7777, адрес с которого принимаются подключения: . 
+2023-03-23 17:02:08,531 INFO server.py Установлено соедение с ПК ('127.0.0.1', 31419)
+2023-03-23 17:02:36,225 INFO server.py Установлено соедение с ПК ('127.0.0.1', 31424)
+2023-03-23 17:02:52,384 DEBUG decorators.py Функция get_message с параметрами (<socket.socket fd=352, family=2, type=1, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 31424)>,), {}. Вызвана из модуля __main__.
+2023-03-23 17:02:52,384 DEBUG server.py Получено сообщение {'action': 'authenticate', 'time': 1679580171.4782834, 'user': {'account_name': 'User1', 'password': 'Password123'}, 'message_text': 'Привет!!!'}
+2023-03-23 17:02:52,384 DEBUG server.py Разбор сообщения от клиента : {'action': 'authenticate', 'time': 1679580171.4782834, 'user': {'account_name': 'User1', 'password': 'Password123'}, 'message_text': 'Привет!!!'}
+2023-03-23 17:02:52,384 DEBUG decorators.py Функция client_response_check с параметрами ({'action': 'authenticate', 'time': 1679580171.4782834, 'user': {'account_name': 'User1', 'password': 'Password123'}, 'message_text': 'Привет!!!'}, []), {}. Вызвана из модуля __main__.
+2023-03-23 18:20:40,603 INFO server.py Запущен сервер, порт для подключений: 7777, адрес с которого принимаются подключения: . 
+2023-03-23 18:23:58,082 INFO server.py Запущен сервер, порт для подключений: 7777, адрес с которого принимаются подключения: . 
+2023-03-23 18:24:03,303 INFO server.py Установлено соедение с ПК ('127.0.0.1', 7338)
+2023-03-23 18:24:41,183 INFO server.py Установлено соедение с ПК ('127.0.0.1', 7366)
+2023-03-23 18:29:07,546 INFO server.py Запущен сервер, порт для подключений: 7777, адрес с которого принимаются подключения: . 
+2023-03-23 18:30:37,070 INFO server.py Запущен сервер, порт для подключений: 7777, адрес с которого принимаются подключения: . 
+2023-03-23 18:31:15,342 INFO server.py Установлено соедение с ПК ('127.0.0.1', 7400)
+2023-03-23 18:32:14,822 DEBUG decorators.py Функция get_message с параметрами (<socket.socket fd=860, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 7400)>,), {}. Вызвана из модуля __main__.
+2023-03-23 18:32:14,823 DEBUG server.py Получено сообщение {'action': 'message', 'time': 1679585446.9762468, 'user': {'account_name': 'User1', 'password': 'Password123'}, 'message_text': 'Привет'}
+2023-03-23 18:32:14,823 DEBUG server.py Разбор сообщения от клиента : {'action': 'message', 'time': 1679585446.9762468, 'user': {'account_name': 'User1', 'password': 'Password123'}, 'message_text': 'Привет'}
+2023-03-23 18:32:14,823 INFO server.py Клиент ('127.0.0.1', 7400) отключился от сервера.
+2023-03-23 18:33:46,706 INFO server.py Установлено соедение с ПК ('127.0.0.1', 7408)
+2023-03-23 18:35:22,390 INFO server.py Запущен сервер, порт для подключений: 7777, адрес с которого принимаются подключения: . 
+2023-03-23 18:35:30,234 INFO server.py Установлено соедение с ПК ('127.0.0.1', 7417)
+2023-03-23 18:35:48,327 INFO server.py Установлено соедение с ПК ('127.0.0.1', 7418)
+2023-03-23 18:35:52,371 DEBUG decorators.py Функция get_message с параметрами (<socket.socket fd=184, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 7418)>,), {}. Вызвана из модуля __main__.
+2023-03-23 18:35:52,371 DEBUG server.py Получено сообщение {'action': 'message', 'time': 1679585752.0984824, 'user': {'account_name': 'User1', 'password': 'Password123'}, 'message_text': 'вапавпвпа'}
+2023-03-23 18:35:52,371 DEBUG server.py Разбор сообщения от клиента : {'action': 'message', 'time': 1679585752.0984824, 'user': {'account_name': 'User1', 'password': 'Password123'}, 'message_text': 'вапавпвпа'}
+2023-03-23 18:35:52,371 INFO server.py Клиент ('127.0.0.1', 7418) отключился от сервера.
+2023-03-23 18:36:33,748 DEBUG decorators.py Функция get_message с параметрами (<socket.socket fd=184, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 7418)>,), {}. Вызвана из модуля __main__.
+2023-03-23 18:36:33,748 DEBUG server.py Получено сообщение {'action': 'message', 'time': 1679585793.7473302, 'user': {'account_name': 'User1', 'password': 'Password123'}, 'message_text': 'впкупвапававппавп'}
+2023-03-23 18:36:33,749 DEBUG server.py Разбор сообщения от клиента : {'action': 'message', 'time': 1679585793.7473302, 'user': {'account_name': 'User1', 'password': 'Password123'}, 'message_text': 'впкупвапававппавп'}
+2023-03-23 18:36:33,749 INFO server.py Клиент ('127.0.0.1', 7417) отключился от сервера.
+2023-03-23 18:36:33,750 INFO server.py Установлено соедение с ПК ('127.0.0.1', 7421)
+2023-03-23 18:37:38,165 INFO server.py Запущен сервер, порт для подключений: 7777, адрес с которого принимаются подключения: . 
+2023-03-23 18:38:50,299 INFO server.py Запущен сервер, порт для подключений: 7777, адрес с которого принимаются подключения: . 
+2023-03-23 18:39:13,965 INFO server.py Запущен сервер, порт для подключений: 7777, адрес с которого принимаются подключения: . 
+2023-03-23 18:45:39,418 INFO server.py Запущен сервер, порт для подключений: 7777, адрес с которого принимаются подключения: . 
+2023-03-23 18:45:53,319 INFO server.py Установлено соедение с ПК ('127.0.0.1', 7478)
+2023-03-23 18:46:01,394 DEBUG decorators.py Функция get_message с параметрами (<socket.socket fd=364, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 7478)>,), {}. Вызвана из модуля __main__.
+2023-03-23 18:46:01,394 DEBUG server.py Получено сообщение {'action': 'message', 'time': 1679586360.837958, 'user': {'account_name': 'User1', 'password': 'Password123'}, 'message_text': 'привет'}
+2023-03-23 18:46:01,395 DEBUG server.py Разбор сообщения от клиента : {'action': 'message', 'time': 1679586360.837958, 'user': {'account_name': 'User1', 'password': 'Password123'}, 'message_text': 'привет'}
+2023-03-23 18:46:01,395 INFO server.py Клиент ('127.0.0.1', 7478) отключился от сервера.
+2023-03-23 18:48:56,343 INFO server.py Запущен сервер, порт для подключений: 7777, адрес с которого принимаются подключения: . 
+2023-03-23 18:49:04,967 INFO server.py Установлено соедение с ПК ('127.0.0.1', 12978)
+2023-03-23 18:49:07,999 DEBUG decorators.py Функция get_message с параметрами (<socket.socket fd=860, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 12978)>,), {}. Вызвана из модуля __main__.
+2023-03-23 18:49:08,000 DEBUG server.py Получено сообщение {'action': 'message', 'time': 1679586547.6096003, 'user': {'account_name': 'User1', 'password': 'Password123'}, 'message_text': '121551'}
+2023-03-23 18:49:08,002 DEBUG server.py Разбор сообщения от клиента : {'action': 'message', 'time': 1679586547.6096003, 'user': {'account_name': 'User1', 'password': 'Password123'}, 'message_text': '121551'}
+2023-03-23 18:49:49,925 INFO server.py Клиент ('127.0.0.1', 12978) отключился от сервера.
+2023-03-23 18:50:16,029 INFO server.py Запущен сервер, порт для подключений: 7777, адрес с которого принимаются подключения: . 
+2023-03-23 18:50:27,896 INFO server.py Установлено соедение с ПК ('127.0.0.1', 12990)
+2023-03-23 18:50:29,911 DEBUG decorators.py Функция get_message с параметрами (<socket.socket fd=720, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 12990)>,), {}. Вызвана из модуля __main__.
+2023-03-23 18:50:29,911 DEBUG server.py Получено сообщение {'action': 'message', 'time': 1679586629.572827, 'user': {'account_name': 'User1', 'password': 'Password123'}, 'message_text': 'ппннене'}
+2023-03-23 18:50:29,912 DEBUG server.py Разбор сообщения от клиента : {'action': 'message', 'time': 1679586629.572827, 'user': {'account_name': 'User1', 'password': 'Password123'}, 'message_text': 'ппннене'}
+2023-03-23 18:51:02,927 INFO server.py Клиент ('127.0.0.1', 12990) отключился от сервера.
