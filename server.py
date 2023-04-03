@@ -16,6 +16,7 @@ import json
 import sys
 from decorators import log
 import select
+from metaclasses import ServerVerifier
 
 # Параметры логирования
 SERVER_LOGGER = logging.getLogger('server')

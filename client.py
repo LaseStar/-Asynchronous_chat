@@ -16,6 +16,7 @@ import sys
 import logging
 import log.client_log_config
 from decorators import log
+from metaclasses import ClientVerifier
 
 # Параметры логирования
 CLIENT_LOGGER = logging.getLogger('client')
