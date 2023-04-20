@@ -348,8 +348,8 @@ class ServerStorage:
 # Отладка
 if __name__ == '__main__':
     test_db = ServerStorage('../server_database.db3')
-    test_db.user_login('test1', '192.168.1.128', 8080)
-    test_db.user_login('test2', '192.168.1.128', 8081)
+    test_db.user_login('test1', '192.168.1.113', 8080)
+    test_db.user_login('test2', '192.168.1.113', 8081)
     print(test_db.users_list())
     # print(test_db.active_users_list())
     # test_db.user_logout('McG')

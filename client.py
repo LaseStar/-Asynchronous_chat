@@ -1,13 +1,12 @@
 import logging
-import os
 
 from Crypto.PublicKey import RSA
 
 import logs.config_client_log
 import argparse
 import sys
+import os
 from PyQt5.QtWidgets import QApplication, QMessageBox
-
 
 from common.variables import *
 from common.errors import ServerError
@@ -24,6 +23,11 @@ logger = logging.getLogger('client')
 # Парсер аргументов коммандной строки
 @log
 def arg_parser():
+    '''
+    Парсер аргументов командной строки, возвращает кортеж из 4 элементов
+    адрес сервера, порт, имя пользователя, пароль.
+    Выполняет проверку на корректность номера порта.
+    '''
     parser = argparse.ArgumentParser()
     parser.add_argument('addr', default=DEFAULT_IP_ADDRESS, nargs='?')
     parser.add_argument('port', default=DEFAULT_PORT, type=int, nargs='?')
@@ -36,7 +40,7 @@ def arg_parser():
     client_passwd = namespace.password
 
     # проверим подходящий номер порта
-    if not 1023 < server_port < 70001:
+    if not 1023 < server_port < 65536:
         logger.critical(
             f'Попытка запуска клиента с неподходящим номером порта: {server_port}. Допустимы адреса с 1024 до 65535. Клиент завершается.')
         exit(1)
@@ -57,12 +61,12 @@ if __name__ == '__main__':
     start_dialog = UserNameDialog()
     if not client_name or not client_passwd:
         client_app.exec_()
-        # Если пользователь ввёл имя и нажал ОК, то сохраняем ведённое и удаляем объект, инааче выходим
+        # Если пользователь ввёл имя и нажал ОК, то сохраняем ведённое и
+        # удаляем объект, инааче выходим
         if start_dialog.ok_pressed:
             client_name = start_dialog.client_name.text()
             client_passwd = start_dialog.client_passwd.text()
             logger.debug(f'Using USERNAME = {client_name}, PASSWD = {client_passwd}.')
-            # del start_dialog
         else:
             exit(0)
 
@@ -83,10 +87,8 @@ if __name__ == '__main__':
 
     #!!!keys.publickey().export_key()
     logger.debug("Keys sucsessfully loaded.")
-
     # Создаём объект базы данных
     database = ClientDatabase(client_name)
-
     # Создаём объект - транспорт и запускаем транспортный поток
     try:
         transport = ClientTransport(
@@ -104,6 +106,7 @@ if __name__ == '__main__':
     transport.setDaemon(True)
     transport.start()
 
+    # Удалим объект диалога за ненадобностью
     del start_dialog
 
     # Создаём GUI

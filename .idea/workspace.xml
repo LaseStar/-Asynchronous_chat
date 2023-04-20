@@ -2,34 +2,136 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="63625c71-48e1-4906-a436-797f0009c9af" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Lase.key" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/client_Lase.db3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/client_Lase2.db3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/descryptors.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/metaclasses.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/server.log.2023-04-13" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/add_user.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/config_window.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/core.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/database.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/main_window.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/remove_user.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/stat_window.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_build/doctrees/client.doctree" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_build/doctrees/common.doctree" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_build/doctrees/environment.pickle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_build/doctrees/example.doctree" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_build/doctrees/index.doctree" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_build/doctrees/launcher.doctree" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_build/doctrees/logs.doctree" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_build/doctrees/server.doctree" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_build/doctrees/venv/Lib/site-packages/Jinja2-3.1.2.dist-info/LICENSE.doctree" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_build/doctrees/venv/Lib/site-packages/MarkupSafe-2.1.2.dist-info/LICENSE.doctree" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_build/doctrees/venv/Lib/site-packages/click-8.1.3.dist-info/LICENSE.doctree" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_build/doctrees/venv/Lib/site-packages/imagesize-1.4.1.dist-info/LICENSE.doctree" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_build/doctrees/venv/Lib/site-packages/pbr/tests/testpackage/data_files/c.doctree" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_build/doctrees/venv/Lib/site-packages/pbr/tests/testpackage/doc/source/index.doctree" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_build/doctrees/venv/Lib/site-packages/pbr/tests/testpackage/doc/source/installation.doctree" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_build/doctrees/venv/Lib/site-packages/pbr/tests/testpackage/doc/source/usage.doctree" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_build/doctrees/venv/Lib/site-packages/pycryptodome-3.17.dist-info/AUTHORS.doctree" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_build/doctrees/venv/Lib/site-packages/pycryptodome-3.17.dist-info/LICENSE.doctree" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_build/doctrees/venv/Lib/site-packages/sphinx/ext/autosummary/templates/autosummary/base.doctree" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_build/doctrees/venv/Lib/site-packages/sphinx/ext/autosummary/templates/autosummary/class.doctree" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_build/doctrees/venv/Lib/site-packages/sphinx/ext/autosummary/templates/autosummary/module.doctree" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_build/html/.buildinfo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_build/html/_sources/client.rst.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_build/html/_sources/common.rst.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_build/html/_sources/example.rst.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_build/html/_sources/index.rst.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_build/html/_sources/launcher.rst.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_build/html/_sources/logs.rst.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_build/html/_sources/server.rst.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_build/html/_sources/venv/Lib/site-packages/Jinja2-3.1.2.dist-info/LICENSE.rst.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_build/html/_sources/venv/Lib/site-packages/MarkupSafe-2.1.2.dist-info/LICENSE.rst.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_build/html/_sources/venv/Lib/site-packages/click-8.1.3.dist-info/LICENSE.rst.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_build/html/_sources/venv/Lib/site-packages/imagesize-1.4.1.dist-info/LICENSE.rst.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_build/html/_sources/venv/Lib/site-packages/pbr/tests/testpackage/data_files/c.rst.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_build/html/_sources/venv/Lib/site-packages/pbr/tests/testpackage/doc/source/index.rst.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_build/html/_sources/venv/Lib/site-packages/pbr/tests/testpackage/doc/source/installation.rst.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_build/html/_sources/venv/Lib/site-packages/pbr/tests/testpackage/doc/source/usage.rst.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_build/html/_sources/venv/Lib/site-packages/pycryptodome-3.17.dist-info/AUTHORS.rst.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_build/html/_sources/venv/Lib/site-packages/pycryptodome-3.17.dist-info/LICENSE.rst.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_build/html/_sources/venv/Lib/site-packages/sphinx/ext/autosummary/templates/autosummary/base.rst.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_build/html/_sources/venv/Lib/site-packages/sphinx/ext/autosummary/templates/autosummary/class.rst.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_build/html/_sources/venv/Lib/site-packages/sphinx/ext/autosummary/templates/autosummary/module.rst.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_build/html/_static/alabaster.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_build/html/_static/base-stemmer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_build/html/_static/basic.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_build/html/_static/custom.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_build/html/_static/doctools.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_build/html/_static/documentation_options.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_build/html/_static/file.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_build/html/_static/language_data.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_build/html/_static/minus.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_build/html/_static/plus.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_build/html/_static/pygments.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_build/html/_static/russian-stemmer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_build/html/_static/searchtools.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_build/html/_static/sphinx_highlight.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_build/html/_static/translations.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_build/html/client.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_build/html/common.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_build/html/example.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_build/html/genindex.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_build/html/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_build/html/launcher.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_build/html/logs.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_build/html/objects.inv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_build/html/search.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_build/html/searchindex.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_build/html/server.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_build/html/venv/Lib/site-packages/Jinja2-3.1.2.dist-info/LICENSE.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_build/html/venv/Lib/site-packages/MarkupSafe-2.1.2.dist-info/LICENSE.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_build/html/venv/Lib/site-packages/click-8.1.3.dist-info/LICENSE.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_build/html/venv/Lib/site-packages/imagesize-1.4.1.dist-info/LICENSE.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_build/html/venv/Lib/site-packages/pbr/tests/testpackage/data_files/c.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_build/html/venv/Lib/site-packages/pbr/tests/testpackage/doc/source/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_build/html/venv/Lib/site-packages/pbr/tests/testpackage/doc/source/installation.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_build/html/venv/Lib/site-packages/pbr/tests/testpackage/doc/source/usage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_build/html/venv/Lib/site-packages/pycryptodome-3.17.dist-info/AUTHORS.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_build/html/venv/Lib/site-packages/pycryptodome-3.17.dist-info/LICENSE.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_build/html/venv/Lib/site-packages/sphinx/ext/autosummary/templates/autosummary/base.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_build/html/venv/Lib/site-packages/sphinx/ext/autosummary/templates/autosummary/class.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_build/html/venv/Lib/site-packages/sphinx/ext/autosummary/templates/autosummary/module.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/client.ui" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/conf.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example.rst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index.rst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/server.log.2023-04-17" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/make.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/client.rst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/common.rst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/conf.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/index.rst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/launcher.rst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/logs.rst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/server.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0800d3dc-b255-46a9-8390-0cbd872bc5e7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/0800d3dc-b255-46a9-8390-0cbd872bc5e7.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client.py" beforeDir="false" afterPath="$PROJECT_DIR$/client.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/add_contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/client/add_contact.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/client_Lase.db3" beforeDir="false" afterPath="$PROJECT_DIR$/client/client_Lase.db3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/client_Lase2.db3" beforeDir="false" afterPath="$PROJECT_DIR$/client/client_Lase2.db3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/client_test1.db3" beforeDir="false" afterPath="$PROJECT_DIR$/client/client_test1.db3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/database.py" beforeDir="false" afterPath="$PROJECT_DIR$/client/database.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/del_contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/client/del_contact.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/main_window.py" beforeDir="false" afterPath="$PROJECT_DIR$/client/main_window.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/main_window_conv.py" beforeDir="false" afterPath="$PROJECT_DIR$/client/main_window_conv.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/start_dialog.py" beforeDir="false" afterPath="$PROJECT_DIR$/client/start_dialog.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/transport.py" beforeDir="false" afterPath="$PROJECT_DIR$/client/transport.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/decos.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/decos.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/descryptors.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/descryptors.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/errors.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/errors.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/metaclasses.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/metaclasses.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/utils.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/variables.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/variables.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/launcher.py" beforeDir="false" afterPath="$PROJECT_DIR$/launcher.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/client.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/client.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/server.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/server.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server.ini" beforeDir="false" afterPath="$PROJECT_DIR$/server.ini" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server.py" beforeDir="false" afterPath="$PROJECT_DIR$/server.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/add_user.py" beforeDir="false" afterPath="$PROJECT_DIR$/server/add_user.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/config_window.py" beforeDir="false" afterPath="$PROJECT_DIR$/server/config_window.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/core.py" beforeDir="false" afterPath="$PROJECT_DIR$/server/core.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/database.py" beforeDir="false" afterPath="$PROJECT_DIR$/server/database.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/main_window.py" beforeDir="false" afterPath="$PROJECT_DIR$/server/main_window.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/remove_user.py" beforeDir="false" afterPath="$PROJECT_DIR$/server/remove_user.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/stat_window.py" beforeDir="false" afterPath="$PROJECT_DIR$/server/stat_window.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server_database.db3" beforeDir="false" afterPath="$PROJECT_DIR$/server_database.db3" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -47,7 +149,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="lesson_13" />
+        <entry key="$PROJECT_DIR$" value="lesson_14" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -63,19 +165,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Lenovo/Downloads/Урок 6. Пример практического задания (1)/Урок 6. Пример практического задания/server/database.py",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Lenovo/Downloads/Пример ДЗ/Пример ДЗ/doc/source/conf.py&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="Python.client">
+}</component>
+  <component name="RunManager" selected="Python docs.Docutils Task in exemple.rst">
     <configuration name="add_user" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="-Asynchronous_chat" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -142,28 +244,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="database" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="-Asynchronous_chat" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/server" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/server/database.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="server" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="-Asynchronous_chat" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -186,13 +266,30 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Docutils Task in exemple.rst" type="docs" factoryName="Docutils task" temporary="true">
+      <module name="-Asynchronous_chat" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="docutils_input_file" value="$PROJECT_DIR$/exemple.rst" />
+      <option name="docutils_output_file" value="$PROJECT_DIR$/exemple.html" />
+      <option name="docutils_params" value="" />
+      <option name="docutils_task" value="rst2html" />
+      <option name="docutils_open_in_browser" value="true" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python docs.Docutils Task in exemple.rst" />
         <item itemvalue="Python.client" />
         <item itemvalue="Python.server" />
         <item itemvalue="Python.add_user" />
         <item itemvalue="Python.config_window" />
-        <item itemvalue="Python.database" />
       </list>
     </recent_temporary>
   </component>
@@ -213,6 +310,9 @@
       <workItem from="1681725699416" duration="363000" />
       <workItem from="1681739255704" duration="660000" />
       <workItem from="1681744371326" duration="4452000" />
+      <workItem from="1681989928529" duration="377000" />
+      <workItem from="1681993149149" duration="2119000" />
+      <workItem from="1681995308490" duration="260000" />
     </task>
     <servers />
   </component>
@@ -236,15 +336,16 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/_Asynchronous_chat$database.coverage" NAME="database Coverage Results" MODIFIED="1681748595896" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/server" />
     <SUITE FILE_PATH="coverage/_Asynchronous_chat$main_window.coverage" NAME="main_window Coverage Results" MODIFIED="1681395457729" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/client" />
-    <SUITE FILE_PATH="coverage/_Asynchronous_chat$client.coverage" NAME="client Coverage Results" MODIFIED="1681749427936" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/_Asynchronous_chat$server_database.coverage" NAME="server_database Coverage Results" MODIFIED="1681142837348" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Downloads/Урок 4. Пример практического задания (1)/Урок 4. Пример практического задания" />
     <SUITE FILE_PATH="coverage/_Asynchronous_chat$add_user.coverage" NAME="add_user Coverage Results" MODIFIED="1681748615844" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/server" />
     <SUITE FILE_PATH="coverage/_Asynchronous_chat$config_window.coverage" NAME="config_window Coverage Results" MODIFIED="1681748609734" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/server" />
     <SUITE FILE_PATH="coverage/_Asynchronous_chat$start_dialog.coverage" NAME="start_dialog Coverage Results" MODIFIED="1681396712006" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/client" />
     <SUITE FILE_PATH="coverage/_Asynchronous_chat$client_db.coverage" NAME="client_db Coverage Results" MODIFIED="1681142941027" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/_Asynchronous_chat$server_db.coverage" NAME="server_db Coverage Results" MODIFIED="1681394747923" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/_Asynchronous_chat$server.coverage" NAME="server Coverage Results" MODIFIED="1681749382349" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/_Asynchronous_chat$server.coverage" NAME="server Coverage Results" MODIFIED="1681989966117" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/_Asynchronous_chat$database__1_.coverage" NAME="database (1) Coverage Results" MODIFIED="1681748455945" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/client" />
+    <SUITE FILE_PATH="coverage/_Asynchronous_chat$Docutils_Task_in_exemple_rst.coverage" NAME="Docutils Task in exemple.rst Coverage Results" MODIFIED="1681994148413" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/_Asynchronous_chat$client.coverage" NAME="client Coverage Results" MODIFIED="1681994028726" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/_Asynchronous_chat$server_db.coverage" NAME="server_db Coverage Results" MODIFIED="1681394747923" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/_Asynchronous_chat$main_window_conv.coverage" NAME="main_window_conv Coverage Results" MODIFIED="1681396702285" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/client" />
   </component>
 </project>
